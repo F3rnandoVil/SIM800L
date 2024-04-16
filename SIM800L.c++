@@ -47,7 +47,7 @@ void send_sms() {
   Sim800L.print("AT+CMGS=\"'Coloca aqui el nmero mas lada'\"\r"); // Envia el comando para enviar un mensaje SMS al número especificado
   esperarRespuesta(); // Espera la respuesta del módulo
   
-  Sim800L.print("Hola puto TE LLEGO UN MENSAJE DESDE UN PUTO CHIP"); // Envia el contenido del mensaje SMS
+  Sim800L.print("Hola TE LLEGO UN MENSAJE DESDE UN SM800L"); // Envia el contenido del mensaje SMS
   Sim800L.write(0x1A); // Envia el código de finalización del mensaje SMS
   esperarRespuesta(); // Espera la respuesta del módulo
 }
